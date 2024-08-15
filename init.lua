@@ -18,6 +18,9 @@ vim.g.mapleader = " "
 -- To work with auto sessions
 vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
+-- These modules are not loaded by lazy
+require("core.options")
+
 -- Initialize lazy with dynamic loading of anything in the plugins directory
 require("lazy").setup("plugins", {
    change_detection = {
@@ -26,6 +29,5 @@ require("lazy").setup("plugins", {
   },
 })
 
--- These modules are not loaded by lazy
-require("core.options")
+-- Setting up keymaps after all modules are loaded
 require("core.keymaps")
