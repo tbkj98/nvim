@@ -1,4 +1,3 @@
-if true then return {} end
 -- Status line
 return {
   -- https://github.com/nvim-lualine/lualine.nvim

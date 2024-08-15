@@ -10,7 +10,7 @@ function ApplyColors(colors)
     vim.api.nvim_set_hl(0, "NormalNC", { bg="none" })
 
     -- Status line transparency
-    vim.api.nvim_set_hl(0, 'StatusLine', { bg="none", fg="#98EAE7" })
+    vim.api.nvim_set_hl(0, 'StatusLine', { bg="none", fg="#0EF2EA" })
     vim.api.nvim_set_hl(0, 'StatusLineNC', { bg="none", fg="#98EAE7" })
 
     -- Message area(command) text colors
