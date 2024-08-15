@@ -1,3 +1,4 @@
+if true then return {} end
 -- Status line
 return {
   -- https://github.com/nvim-lualine/lualine.nvim
@@ -11,7 +12,7 @@ return {
   opts = {
     options = {
       -- For more themes, see https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
-      theme = "codedark", -- "auto, tokyonight, catppuccin, codedark, nord" 
+      theme = "tokyonight", -- "auto, tokyonight, catppuccin, codedark, nord" 
     },
     sections = {
       lualine_c = {

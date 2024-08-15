@@ -1,3 +1,4 @@
+if true then return {} end
 return {
   {
     'rmagatti/auto-session',
@@ -10,6 +11,7 @@ return {
       require('auto-session').setup({
         auto_session_suppress_dirs = { '~/Downloads', '/' },
         log_level = "error",
+        silent_restore = false,
         auto_session_enable_last_session = true,
         auto_session_root_dir = vim.fn.stdpath('data') .. "/sessions/",
         auto_session_enabled = true,
