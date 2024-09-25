@@ -1,18 +1,18 @@
 local opt = vim.opt
 
 -- Session Management
-opt.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions,globals"
 
 -- Line Numbers
 opt.relativenumber = true
 opt.number = true
 
 -- Tabs & Indentation
-opt.tabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
-vim.bo.softtabstop = 2
+vim.bo.softtabstop = 4
 
 -- Line Wrapping
 opt.wrap = false
@@ -42,9 +42,6 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
 
--- Consider - as part of keyword
-opt.iskeyword:append("-")
-
 -- Disable the mouse while in nvim
 opt.mouse = ""
 
@@ -53,3 +50,6 @@ opt.foldlevel = 20
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
 
+
+-- Always show tabline
+vim.o.showtabline = 2

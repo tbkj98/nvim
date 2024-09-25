@@ -7,22 +7,31 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'Catppuccin Mocha'
+-- config.color_scheme = 'Catppuccin Mocha'
+config.color_scheme = 'tokyonight'
 
 -- Fonts
-config.font = wezterm.font('Fira Code', { weight = 'Medium' })
-config.font_size = 12.0
+-- config.font = wezterm.font('Fira Code', { weight = 'Medium' })
+config.font = wezterm.font('Comic Mono')
+config.font_size = 12.5
 
 -- Background opacity
-config.window_background_opacity = 0.15
+-- config.window_background_opacity = 0.9
 
--- Window glass and wezterm tab bar 
+config.colors = {
+  background = '#16161E',
+}
+
+-- Window glass and wezterm tab bar
 config.window_decorations = "NONE"
 config.enable_tab_bar = false
 
 config.window_frame = {
-  active_titlebar_bg = "rgba(0 0 0 0)",
+    active_titlebar_bg = "rgba(0 0 0 0)",
 }
+
+config.warn_about_missing_glyphs = false
+config.audible_bell = 'Disabled'
 
 -- and finally, return the configuration to wezterm
 return config

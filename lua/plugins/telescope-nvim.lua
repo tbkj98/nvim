@@ -41,6 +41,7 @@ return {
         ".factorypath",
         ".project",
         ".classpath",
+        "dist",
       }
     },
     pickers = {
